@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / NBA Dummy portal</title>
+    <!--Fonts (Urbanist, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Kanit, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fonts (Poppins, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Orbitron, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Archivo, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Lindel-Hill, serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Linden+Hill:ital@0;1&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Open Sans, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Linden+Hill:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../photos/favicon.png">
+    <style>
+      .pageflex-full{
+        display: flex;
+      }
+      @media (min-width: 1024px) {
+        .inner-flex {
+          flex-direction: row;
+        }
+        .hidden-bg {
+          background-color: rgb(231 255 232);
+          display: block;
+        }
+        .hidden-screen {
+          padding-bottom: 18%;
+        }
+
+        .inner-overflow{
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-top: 10%;
+          justify-content: flex-start;
+        }
+        .separateTop-field{
+          margin-left: -1rem;
+        }
+        .flex-progress{
+          gap: .75rem;
+        }
+        .checkmark{
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        .solidgreen{
+          width: 4rem;
+        }
+        .unchecked{
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        .gradientgreen{
+          width: 4rem;
+        }
+        .sign-in-form{
+          width: 75%;
+        }
+
+        .separate-field{
+          right: 7rem;
+          bottom: 4rem;
+        }
+        .separate-field-text{
+          display: block;
+        } 
+        .svg-bg{
+          width: 3rem;
+          height: 3rem;
+        }
+        svg{
+          width: 2rem;
+          height: 2rem;
+          margin-top: .52rem;
+        }
+      }
+      @media (max-width: 1023px){
+        .inner-flex{
+          flex-direction: column;
+        }
+        .hidden-bg {
+          background-color: rgb(231 255 232);
+          display: none;
+        }
+
+        .inner-overflow{
+          justify-content: center;
+        }
+        .checkmark{
+          width: 1rem;
+          height: 1rem;
+        }
+        .unchecked{
+          width: 1rem;
+          height: 1rem;
+        }
+        .solidgreen{
+          width: 1.75rem;
+        }
+        .gradientgreen{
+          width: 1.75rem;
+        }
+        .sign-in-form{
+          width: 100%;
+        }
+
+        .separate-field{
+          right: .5rem;
+          bottom: 1.25rem;
+        }
+        .separate-field-text{
+        display: none;
+        } 
+        .svg-bg{
+          width: 2rem;
+          height: 2rem;
+        }
+        svg{
+          height: 1.25rem;
+          width: 1.25rem;
+        }
+      }
+      @media (min-width: 768px){
+        .progress-tag{
+          display: flex;
+        }
+        .progress-tag-start{
+          display: flex;
+        }
+        .progress-text{
+          font-size: .75rem;
+          line-height: 1rem;
+        }
+      }
+      @media (max-width: 767px){
+        .hidden{
+          display: none;
+        }
+        .progress-text{
+          font-size: 12px;
+        }
+      }
+      .inner-flex {
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      }
+      .hidden-bg {
+        color: rgb(255 255 255);
+        min-height: 100%;
+        width: 60%;
+      }
+      .hidden-screen {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 18%;
+        justify-content: space-between;
+      }
+      .img-position{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-logo{
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .login-image{
+        height: 400.55px;
+        max-width: 100%;
+        display: block;
+      }
+      .hidden-text{
+        color: rgb(0 0 0);
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        font-family: "Urbanist",sans-serif;
+      }
+      .hidden-font-normal{
+        font-weight: 400;
+        font-family: "Urbanist", sans-serif;
+      }
+
+      .overflow-bg{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-color: rgb(160, 160, 160);
+        width: 100%;
+        height: 100%;
+      }
+      .inner-overflow{
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 100vh;
+        padding: 1rem;
+        align-items: flex-start;
+       
+      }
+      .separateTop-field{
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 2.5rem;
+        display: flex;
+      }
+      .progress-tag{
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-top: 2.52rem;
+      }
+      .progress-tag-start{
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding-top: 2.52rem;
+      }
+      .flex-progress{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+      }
+      .checkmark{
+        color: rgb(0 144 9);
+        display: block;
+      }
+      .progress-text{
+        color: rgb(107 114 128);
+        font-family: "Urbanist", sans-serif;
+        width: 100%;
+      }
+      .solidgreen{
+        height: .19rem;
+        background-color: rgb(0, 144, 9);
+      }
+      .gradientgreen{
+        height: .19rem;
+        --tw-gradient-from: #009009;
+        --tw-gradient-to: rgb(0 144 9 / 0);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+      }
+      .unchecked{
+        background-color: rgb(243 244 246 );
+        border-color: rgb(209 213 219);
+        border-width: 2px;
+        border-radius: 9999px;
+        border-style: solid;
+      }
+      .btns-display{
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: row;
+      }
+      a{
+        text-decoration: none;
+      }
+      .signup-btn{
+        color: rgb(0 0 0);
+        text-align: left;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        border-bottom-color: rgb(0 144 9);
+        border-bottom-width: .19rem;
+        width: 6rem;
+        border-bottom-style: solid;
+        font-family: "Urbanist", sans-serif;
+      }
+      .login-btn{
+        color: rgb(107 114 128);
+        text-align: left;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        border-bottom-color: rgb(209 213 219);
+        border-bottom-width: .1rem;
+        width: 6rem;
+        border-bottom-style: solid;
+        font-family: "Urbanist", sans-serif;
+      }
+      
+      .login-form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .75rem;
+        align-items: flex-start;
+      }
+      h1{
+        color: rgb(31 41 55);
+        margin-bottom: .5rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-family: "Urbanist",sans-serif;
+      }
+      p{
+        color: rgb(107 114 128);
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 1.25rem;
+        font-family: "Urbanist", sans-serif;
+        font-size: .875rem;
+        line-height: 1.25rem;
+      }
+      .first-field{
+        margin-top: 2.75rem;
+        margin-bottom: 2.75rem;
+        width: 100%;
+      }
+      .field-text{
+        color: rgb(55 65 81);
+        text-align: left;
+        font-weight: 400;
+        font-family: "Urbanist", sans-serif;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        display: block;
+      }
+      .input-field{
+        margin-top: .25rem;
+        position: relative;
+      }
+      .input-text{
+        display: block;
+        font-family: "Urbanist", sans-serif;
+        width: 70%;
+        border-radius: .25rem;
+        border-width: 1px;
+        border-color: rgb(209 213 219);
+        padding: .625rem;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        --tw-shadow: 0 1px 2px 0 rgba(124, 123, 123, 0.89);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .icon-display{
+        padding-right: .5rem;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        right: 0;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+      }
+      input[type=text]:focus{
+        border: 1px solid rgb(0, 144, 9);
+        outline: none;
+      }
+      .fourth-field{
+        margin-top: 2.75rem;
+        width: 100%;
+      }
+      .login-greenBtn{
+        --tw-shadow: 0 1px 2px 0 rgb(124 123 123 / 0.89);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        color: rgb(255 255 255 );
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: rgb(0 144 9);
+        border-width: 1px;
+        border-color: transparent;   
+        border-radius: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        display: inline-flex;
+        background-image: none;
+        cursor: pointer;
+        text-transform: none;
+      }
+      .separate-field{
+        width: fit-content;
+        position: fixed;
+      }
+      .separate-flex{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.25rem;
+        cursor: pointer;
+      }
+      .separate-field-text{
+        font-family: "Urbanist", sans-serif;
+        font-weight: 600;
+        color: black;
+        font-size: 1rem;
+      }  
+      .svg-bg{
+        display: flex;
+        background-color: rgb(0, 144, 9);
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        padding: .25rem;
+      }
+      svg{
+        color: rgb(255 255 255);
+        justify-content: flex-end;
+        display: inline-flex;
+        vertical-align: middle;
+      }
+    </style>
+</head>
+<body>
+  <div class="pageflex-full">
+    <div class="inner-flex">
+      <div class="hidden-bg">
+        <div class="hidden-screen">
+          <div class="img-position">
+            <img loading="eager" src="../photos/logo-NBA.png" class="login-logo">
+            <img src="../SVGs/chairman-login.svg" class="login-image">
+          </div>
+          <h4 class="hidden-text">NBA Annual General Conference 2024 
+            <br> 
+            <span class="hidden-font-normal">Are you ready?</span> 
+            Lagos
+            <span class="hidden-font-normal"> is waiting!</span>
+          </h4>
+        </div>
+      </div>
+      <div class="overflow-bg">
+        <div class="inner-overflow">
+          <div class="separateTop-field">
+            <div class="hidden progress-tag false">
+              <div role="button" class="flex-progress">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="checkmark">
+                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd"></path>
+                </svg>
+                <p class="progress-text">SCN &amp; Year</p>
+              </div>
+              <div class="solidgreen"></div>
+            </div>
+            <div class="hidden progress-tag false">
+              <div role="button" class="flex-progress">
+                <div class="unchecked">
+                </div>
+                <p class="progress-text">Verify Bio</p>
+              </div>
+              <div class="gradientgreen"></div>
+            </div>
+            <div class="hidden progress-tag false">
+              <div role="button" class="flex-progress">
+                <div class="unchecked"></div>
+                <p class="progress-text">Update Bio</p>
+              </div>
+              <div class="gradientgreen"></div>
+            </div>
+            <div class="hidden progress-tag false">
+              <div role="button" class="flex-progress">
+                <div class="unchecked"></div>
+                <p class="progress-text">Verify Account</p>
+              </div>
+              <div class="gradientgreen"></div>
+            </div>
+            <div class="hidden progress-tag-start !justify-start">
+              <div role="button" class="flex-progress">
+                <div class="unchecked"></div>
+                <p class="progress-text">Create Password</p>
+              </div>
+            </div>
+          </div>
+          <div class="btns-display">
+            <a class="signup-btn" href="signup.html">&nbsp;Sign Up</a>
+            <a class="login-btn" href="./log-in.html">&nbsp;Login</a>
+          </div>
+          <form class="sign-in-form" autocomplete="on">
+            <h1>Create your account</h1>
+            <p>Let's help you create your account and get access to your NBA<br> portal.</p>
+            <div class="first-field">
+              <div>
+                <label for="scn" class="field-text">Enrollment Number</label>
+                <div class="input-field">
+                  <input type="text" id="scn" placeholder="Enter Enrollment Number" name="scn" autocomplete="scn" required="" class="input-text">
+                </div>
+                <div class="icon-display">
+                </div>
+              </div>
+            </div>
+            <div class="fourth-field">
+              <button type="submit" class="login-greenBtn">Next</button>
+            </div>
+          </form>
+          <div>
+            <div class="separate-field">
+              <div class="separate-flex">
+                <p class="separate-field-text">Contact support</p>
+                <div class="svg-bg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="lg:mt-[0.3rem] w-5 h-5 lg:w-8 lg:h-8 inline-flex justify-end text-white">
+                    <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

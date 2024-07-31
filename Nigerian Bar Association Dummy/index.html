@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / Nigerian Bar Association Dummy</title>
+    <!--Fonts (Urbanist, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Kanit, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fonts (Poppins, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Orbitron, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Archivo, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Lindel-Hill, serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Linden+Hill:ital@0;1&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fonts (Open Sans, Sans-serif)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Linden+Hill:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="./photos/favicon.png">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <header class="menu shadow fixed top-0 z-3 w-full">
+    <div class="container mx-auto">
+      <nav class="navbar navbar-expand-xl" aria-label="Sixth navbar example">
+          <a class="navbarlogo" href="index.html">
+            <img class="navbar-logo" src="./SVGs/NBA-logo.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="navbar-toggler-icon" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15" color="#1A1A1A" height="28" width="28" xmlns="http://www.w3.org/2000/svg" style="color: rgb(26, 26, 26);">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="currentColor"></path>
+              </svg>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample06">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">The NBA</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/about.html">About the NBA</a></li>
+                  <li><a class="dropdown-item" href="./pages/branches.html">Branches</a></li>
+               <li><a class="dropdown-item" href="#/section-and-fora">Section/Fora</a></li>
+               <li><a class="dropdown-item" href="#/nhis">NBA NHIS</a></li>
+               <li><a class="dropdown-item" href="#/find-a-lawyer">Find a lawyer</a></li>
+               <li><a class="dropdown-item" href="#/contact">Contact Us</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#">President's Statement</a>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" >Institutes</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Continuous Education <br> (ICLE)</a></li>
+                  <li><a class="dropdown-item" href="#">Human Rights Institute <br> (HRI)</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">News & Events</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">NBA Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Conference</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/membership-categories.html">Membership Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Payments</a></li>
+                  <li><a class="dropdown-item" href="#">Reports</a></li>
+                  <li><a class="dropdown-item" href="#">Donation</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                  <li><a class="dropdown-item" href="#">Legal Mail</a></li>
+                </ul>
+              </li>
+              <li class="separate-dropdown-content xl:hidden">
+                <div class="separate-flex justify-between items-center container mx-auto">
+                  <a class="separate-text" href="./pages/welcome.html" rel="nonreferrer" target="_blank">Membership
+                  </a>
+                </div>
+              </li>
+            </ul>
+            
+            <div class="nav-end gap-3">
+              <button type="button" class="btn transparent-btnff">
+                <a class="signin-btn" href="./pages/log-in.html" target="_blank">Sign In</a> 
+              </button>
+              <button type="button" class=" btn transparent-btnss">
+                <a class="signup-btn" href="./pages/signup.html" target="_blank">Sign Up</a> 
+              </button>
+            </div>
+          </div>
+      </nav>
+    </div> 
+  </header>
+
+  <section class="featurette w-full flex lg:flex-row">
+    <div class="featurette-left">
+      <div class="conference-featuretteLogo order-md-1">
+        <img class="featurette-image mx-auto" src="./SVGs/conference-logo.svg" alt="logo">
+      </div>
+    </div>
+    <div class="conference-featuretteText col-md-6 order-md-2">
+      <p class="lead">Hurry up, be an Early Bird!</p>
+      <h1 class="featurette-heading fw-normal lh-1">Register for the NBA Annual General Conference 2024</h1>
+      <div class="featurette-btns mt-39px flex lg:flex-row flex-col gap-6">
+        <a class="white-btn btn-primary" href="#./pages/learn-more.html" role="button">Learn more</a>
+        <a class="whiteOutline-btn btn-primary" href="./pages/conference-register.html" role="button">Register</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative-bg-peach xl:overflow-hidden flex">
+    <div class="img-left overflow-hidden">
+      <img class="overflow-hidden" src="./photos/logo-on-olive-bg.png" alt="" width="373" height="373">
+    </div>
+    <div class="text-center container mx-auto">
+      <div class="text-area flex flex-col">
+        <p class="bold-text">The Nigerian Bar Association (NBA)</p>
+        <p class="gray-text">
+          The NBA is Nigeria's foremost and oldest professional 
+          membership organization and Africa's most influential 
+          network of legal practitioners, with over 140,000 lawyers 
+          on its roll in 128 active branches across the 36 States and 
+          the Federal Capital Territory of Nigeria.
+        </p>
+        <div class="greenBig-btn mx-auto flex">
+          <a class="green-button btn-primary" href="./pages/about.html">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="img-right overflow-hidden">
+      <img class="overflow-hidden" src="./photos/lady-on-olive-bg.png" alt="" width="373" height="373">
+    </div>
+  </section> 
+
+  <section class="p-52 z-0">
+    <div class="container mx-auto w-full">
+      <div class="grid lg-grid-cols-3 grid-cols-2">
+        <div class="flex-first flex-col">
+          <p class="bolder-text">140,000+</p>
+          <p class="light-text">Lawyers</p>
+        </div>
+        <div class="flex-second flex-col">
+          <p class="bolder-text">128</p>
+          <p class="light-text">Branches</p>
+        </div>
+        <div class="flex-third flex-col">
+          <p class="bolder-text">36 + FCT</p>
+          <p class="light-text">States</p>
+        </div>
+        <div class="flex-fourth flex-col">
+          <p class="bolder-text">11</p>
+          <p class="light-text">Forums</p>
+        </div>
+        <div class="flex-fifth flex-col">
+          <p class="bolder-text">2</p>
+          <p class="light-text">Institutes</p>
+        </div>
+        <div class="flex-sixth flex-col">
+          <p class="bolder-text">3</p>
+          <p class="light-text">Section</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative-bg-black">
+    <div class="container mx-auto flex-textPhoto flex-col">
+      <div class="relative-img">
+        <img class="gray-photo mx-auto" src="./photos/president-on-gray-bg.png" alt="NBA-president">
+      </div>
+      <div class="photo-text">
+        <p class="white-boldText">Meet the president</p>
+        <p class="white-lightText">Yakubu Chonoko Maikyau obtained his LLB degree from 
+          Ahmadu Bello University in 1989 and was called to the Nigerian Bar in December 1990. 
+          He was later conferred with the rank of Senior Advocate of Nigeria in August 2011.
+        </p>
+        <p class="green-text">Yakubu Chonoko Maikyau, OON SAN</p>
+        <p class="white-lighttext">President</p>
+        <div class="mt-20">
+          <button class="button-mt primary-button">Download Bio</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fora-heading px-10 py-40">
+    <div class="container mx-auto fora-width">
+      <h2 class="fora-headerTextBold">
+        Sections & Fora<br>
+        <span class="fora-headerTextLight">These sections and fora aim to create specialized 
+        communities within the NBA, enabling members to exchange knowledge, foster professional growth, 
+        and collectively address the specific challenges and opportunities in their respective fields of 
+        practice.
+        </span>
+      </h2>
+      <div class="grid xl:grid-cols-3 grid-cols-1 grid-gap fora-grid">
+        <div class="mx-auto fora-photoText">
+          <img class="fora-img" src="./photos/chairman-slp.png" alt="chairman-slp">
+          <p class="imgTextmedium">Boma Alabi
+            <span class="imgTextxsmall">OON, SAN</span>
+            <span class="imgTextnormal">Chairman SLP</span>
+          </p>
+        </div>
+        <div class="mx-auto fora-photoTextsecond">
+          <img class="fora-img" src="./photos/chairman-sbl.png" alt="chairman-sbl">
+          <p class="imgTextmedium">Dr. Adeoye Adefulu
+            <span class="imgTextnormal">Chairman SBL</span>
+          </p>
+        </div>
+        <div class="mx-auto fora-photoText">
+          <img class="fora-img" src="./photos/chairman-spidel.png" alt="chairman-spidel">
+          <p class="imgTextmedium">Sir Steve Ojomeko Adehi
+            <span class="imgTextxsmall">SAN, FCIArb (UK)</span>
+            <span class="imgTextnormal">Chairman SPIDEL</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featurette-bg-gray">
+    <div class="relative-featurette">
+      <div class="container mx-auto grayFlex-relative">
+        <div class="featurette-text">
+          <h3 class="headingText">
+            Discover, Connect, and 
+            <br>
+            thrive with NBA App
+            <span class="smalltext">Lawyers, elevate your experience and stay connected
+              <br>
+              — download the NBA App now!
+            </span>
+          </h3>
+          <div class="flex-link">
+            <a href="https://apps.apple.com/ng/app/nba-digital-app/id6464066248" rel="nonreferrer" target="_blank">
+              <img class="android" src="./photos/playstore-logo.png" alt="">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=ng.org.nigerianbar" rel="nonreferrer" target="_blank">
+              <img class="ios" src="./photos/appstore-logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="absolute-img overflow-hidden">
+          <div class="absoluteImg-sizing">
+            <img class="img-control" src="./photos/iphone-mock-ups.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative-bg-white xl:overflow-hidden flex">
+    <div class="bgWhite-img-left overflow-hidden">
+      <img class="overflow-hidden" src="./photos/logo-on-olive-bg.png" alt="" width="373" height="373">
+    </div>
+    <div class="bgWhite-text-center container mx-auto">
+      <div class="bg-whiteText-area flex flex-col">
+        <p class="bg-whiteText">The Nigerian Bar Association Annual General Conference 2024</p>
+      </div>
+      <div class="bgWhite-greenBig-btn mx-auto flex">
+        <a class="bgWhite-green-button btn-primary" href="./pages/conference-register.html">Register here</a>
+      </div>
+    </div>
+    <div class="bgWhite-img-right overflow-hidden">
+      <img class="overflow-hidden" src="./SVGs/conference-logo.svg" alt="" width="373" height="373">
+    </div>
+  </section>
+
+  <section class="bg-green xl:py-52">
+    <div class="container mx-auto bg-greenContent xl:flex-row w-full">
+      <div class="flex flex-col greenContent-text">
+        <h3 class="lime-boldText">Make Your Membership Payments</h3>
+        <p class="lime-lightText">With our user-friendly interface, 
+          you can now pay your practicing dues seamlessly within a few clicks.
+        </p>
+      </div>
+      <a class="greenContent-btn" href="#">Click here to make payment</a>
+    </div>
+    <img class="relative-greenImg" src="./photos/man-woman-green-bg.png" alt="make-payment">
+  </section>
+
+  <section class="bg-peach xl:py-40">
+    <div class="container mx-auto relative-heading">
+      <h3 class="headingBold">Latest News
+        <span class="headingLight">Get Updated Information of our latest news</span>
+      </h3>
+      <div class="news-grid grid-cols-1 gap-20 lg:grid-cols-2 2xl:grid-cols-4">
+      <div>
+        <a href="https://blog.nigerianbar.org.ng/2024/07/17/nba-3rd-vice-president-visits-lagos-medium-correctional-centre-to-address-overcrowding/"
+          rel="noreferrer" target="_blank">
+          <img class="grid-photo" src="./photos/vice-president-lagos-visit.jpg">
+          <p class="gridPhoto-text">
+            <span>
+              <figure class="wp-block-image size-large is-resized"></figure>
+            </span>
+          </p>
+        </a>
+        <div class="gridText-footer">
+          <a class="textFooterOne" href="https://blog.nigerianbar.org.ng/2024/07/17/nba-3rd-vice-president-visits-lagos-medium-correctional-centre-to-address-overcrowding/"
+            rel="noreferrer" target="_blank">Read more
+          </a>
+          <span class="textFooterTwo">
+            July 18, 2024
+            .
+            <span class="textFooterSubTwo">1 min read</span>
+          </span>
+        </div>
+      </div>
+      <div>
+        <a href="https://blog.nigerianbar.org.ng/2024/07/15/nba-ogwashi-uku-branch-elects-new-executive-committee/"
+          rel="noreferrer" target="_blank">
+          <img class="grid-photo" src="./photos/delta-state-election.png">
+          <p class="gridPhoto-text">
+            <span>
+              <p class="texts">
+                <strong>Ogwuashi-Uku, Delta State</strong>
+                – The Nigerian Bar Association (NBA) Ogwashi-Uku Branch Successfully Conducted Its 2024 Election, 
+                Resulting In The Appointment Of A New Executive C...
+              </p>
+            </span>
+          </p>
+        </a>
+        <div class="gridText-footer">
+          <a class="textFooterOne" href="https://blog.nigerianbar.org.ng/2024/07/15/nba-ogwashi-uku-branch-elects-new-executive-committee/"
+            rel="noreferrer" target="_blank">Read more
+          </a>
+          <span class="textFooterTwo">
+            July 18, 2024
+            .
+            <span class="textFooterSubTwo">4 min read</span>
+          </span>
+        </div>
+      </div>
+      <div>
+        <a href="https://blog.nigerianbar.org.ng/2024/07/15/nbawf-join-us-today-for-an-insightful-webinar-on-building-a-successful-legal-career/"
+          rel="noreferrer" target="_blank">
+          <img class="grid-photo" src="./photos/successful-legal-webinar.png">
+          <p class="gridPhoto-text">
+            <span>
+              <p class="texts">
+                Join Us Today, Monday,
+                <strong>July 15th, at 2:00 p.m</strong>
+                ., as the NBA Women Forum Membership Committee holds a webinar titled ‘
+                <strong>Building a Successful Legal Career: Strategies fo...</strong>
+              </p>
+            </span>
+          </p>
+        </a>
+        <div class="gridText-footer">
+          <a class="textFooterOne" href="https://blog.nigerianbar.org.ng/2024/07/15/nbawf-join-us-today-for-an-insightful-webinar-on-building-a-successful-legal-career/"
+            rel="noreferrer" target="_blank">Read more
+          </a>
+          <span class="textFooterTwo">
+            July 15, 2024
+            .
+            <span class="textFooterSubTwo">2 min read</span>
+          </span>
+        </div>
+      </div>
+      <div>
+        <a href="https://blog.nigerianbar.org.ng/2024/07/15/notice-of-disclaimer-and-nba-official-reaction-to-issuance-of-cmris/"
+          rel="noreferrer" target="_blank">
+          <img class="grid-photo" src="./photos/statement.png">
+          <p class="gridPhoto-text">
+            <span>
+              <p class="texts">
+                The Leadership Of The Nigerian Bar Association (NBA) Has Become Aware Of A Statement Authored 
+                By John Aikpokpo-Martins And Funmi Adeogun Allegedly On Behalf Of The NBA-Section On Public Interest A...
+              </p>
+            </span>
+          </p>
+        </a>
+        <div class="gridText-footer">
+          <a class="textFooterOne" href="https://blog.nigerianbar.org.ng/2024/07/15/notice-of-disclaimer-and-nba-official-reaction-to-issuance-of-cmris/"
+            rel="noreferrer" target="_blank">Read more
+          </a>
+          <span class="textFooterTwo">
+            July 15, 2024
+            .
+            <span class="textFooterSubTwo">4 min read</span>
+          </span>
+        </div>
+      </div>
+      </div>
+      <a class="mx-auto outline-green-btn" href="https://blog.nigerianbar.org.ng/news/" rel="nonreferrer" target="_blank">
+        More news
+      </a>
+    </div>
+  </section>
+
+  <section class="payment pb-20 px-5 lg:pb-40 lg:px-0 p-40">
+    <div class="container mx-auto payment-text">
+      <h3 class="paymentText-header">
+        Make Your Membership
+        <br>
+        Payments
+      </h3>
+      <p class="paymentText-light">
+        Experience hassle-free payment for your bar practice fee
+        <br>
+        and other NBA-related fees with our seamless payment system
+      </p>
+      <a class="payment-btn" href="./pages/welcome.html" rel="noreferrer" target="_blank">
+        Click here to make payment
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer-bg">
+    <div class="container mx-auto">
+      <div class="footer-grid xl:grid-cols-5 grid-cols-2">
+        <div class="diff-grid xl:col-span-1 col-span-2">
+          <img class="footer-NBAlogo" src="./photos/logo-NBA.png" alt="NBA-logo">
+          <p class="footerLogo-text">
+            We are engaged in the promotion and protection of Human Rights, 
+            the Rule of Law, and good governance in Nigeria.
+          </p>
+          <div class="diffgrid-icon">
+            <a href="https://web.facebook.com/NigerianBarAssociationHQ/" target="_blank" rel="noreferrer">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#A6A6A6" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(166, 166, 166);">
+                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/nigerianbar/" target="_blank" rel="noreferrer">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#A6A6A6" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(166, 166, 166);">
+                <path d="M17.3183118,0.0772036939 C18.5358869,0.132773211 19.3775594,0.311686093 20.156489,0.614412318 C20.9357539,0.917263935 21.5259307,1.30117806 22.1124276,1.88767349 C22.6988355,2.47414659 23.0827129,3.06422396 23.3856819,3.84361655 C23.688357,4.62263666 23.8672302,5.46418415 23.9227984,6.68172489 C23.9916356,8.19170553 24,8.72394829 24,11.9999742 C24,15.2760524 23.9916355,15.808302 23.9227954,17.3182896 C23.8672306,18.5358038 23.6883589,19.3773584 23.3855877,20.1566258 C23.0826716,20.9358162 22.6987642,21.5259396 22.1124276,22.1122749 C21.5259871,22.6987804 20.9357958,23.0827198 20.1563742,23.3856323 C19.3772192,23.6883583 18.5357324,23.8672318 17.3183209,23.9227442 C15.8086874,23.9916325 15.2765626,24 12,24 C8.72343739,24 8.19131258,23.9916325 6.68172382,23.9227463 C5.46426077,23.8672314 4.62270711,23.6883498 3.84342369,23.3855738 C3.0641689,23.0827004 2.47399369,22.6987612 1.88762592,22.1123283 C1.30117312,21.525877 0.91721975,20.9357071 0.614318116,20.1563835 C0.311643016,19.3773633 0.132769821,18.5358159 0.0772038909,17.3183251 C0.0083529426,15.8092887 0,15.2774634 0,11.9999742 C0,8.7225328 0.00835296697,8.19071076 0.0772047368,6.68165632 C0.132769821,5.46418415 0.311643016,4.62263666 0.614362729,3.84350174 C0.91719061,3.06430165 1.30113536,2.4741608 1.88757245,1.88772514 C2.47399369,1.30123879 3.0641689,0.917299613 3.84345255,0.614414972 C4.62236201,0.311696581 5.46409415,0.132773979 6.68163888,0.0772035898 C8.19074867,0.00835221992 8.72252573,0 12,0 C15.2774788,0 15.8092594,0.00835235053 17.3183118,0.0772036939 Z M12,2.66666667 C8.75959504,2.66666667 8.26400713,2.67445049 6.80319929,2.74109814 C5.87614637,2.78341009 5.31952221,2.90172878 4.80947575,3.09995521 C4.37397765,3.26922052 4.09725505,3.44924273 3.77324172,3.77329203 C3.44916209,4.09737087 3.26913181,4.37408574 3.09996253,4.80937168 C2.90169965,5.31965737 2.78340891,5.87618164 2.74109927,6.80321713 C2.67445122,8.26397158 2.66666667,8.75960374 2.66666667,11.9999742 C2.66666667,15.2403924 2.67445121,15.7360281 2.74109842,17.1967643 C2.78340891,18.1238184 2.90169965,18.6803426 3.09990404,19.1904778 C3.26914133,19.6259017 3.44919889,19.9026659 3.77329519,20.2267614 C4.09725505,20.5507573 4.37397765,20.7307795 4.80932525,20.8999863 C5.31971515,21.0982887 5.87621193,21.2165784 6.80323907,21.2588497 C8.26460439,21.3255353 8.76051223,21.3333333 12,21.3333333 C15.2394878,21.3333333 15.7353956,21.3255353 17.1968056,21.2588476 C18.123775,21.216579 18.6802056,21.0982995 19.1905083,20.9000309 C19.6260288,20.7307713 19.9027426,20.5507596 20.2267583,20.226708 C20.5507492,19.9027179 20.7308046,19.6259456 20.9000375,19.1906283 C21.0983009,18.6803412 21.2165908,18.1238118 21.2588986,17.196779 C21.3255376,15.7350718 21.3333333,15.2390126 21.3333333,11.9999742 C21.3333333,8.76098665 21.3255376,8.26493375 21.2589016,6.80323567 C21.2165911,5.87618164 21.0983004,5.31965737 20.9001178,4.80957831 C20.7308131,4.37403932 20.550774,4.09729207 20.2267583,3.77324038 C19.9027658,3.44924868 19.6260264,3.26922777 19.1905015,3.09996643 C18.6803988,2.90171817 18.1238378,2.78341062 17.1967608,2.74109868 C15.7359966,2.67445057 15.2404012,2.66666667 12,2.66666667 Z M12,18.2222222 C8.56356156,18.2222222 5.77777778,15.4364384 5.77777778,12 C5.77777778,8.56356156 8.56356156,5.77777778 12,5.77777778 C15.4364384,5.77777778 18.2222222,8.56356156 18.2222222,12 C18.2222222,15.4364384 15.4364384,18.2222222 12,18.2222222 Z M12,15.5555556 C13.9636791,15.5555556 15.5555556,13.9636791 15.5555556,12 C15.5555556,10.0363209 13.9636791,8.44444444 12,8.44444444 C10.0363209,8.44444444 8.44444444,10.0363209 8.44444444,12 C8.44444444,13.9636791 10.0363209,15.5555556 12,15.5555556 Z M18.2222222,7.11111111 C17.4858426,7.11111111 16.8888889,6.51415744 16.8888889,5.77777778 C16.8888889,5.04139811 17.4858426,4.44444444 18.2222222,4.44444444 C18.9586019,4.44444444 19.5555556,5.04139811 19.5555556,5.77777778 C19.5555556,6.51415744 18.9586019,7.11111111 18.2222222,7.11111111 Z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/NigBarAssoc" target="_blank" rel="noreferrer">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#A6A6A6" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(166, 166, 166);">
+                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footerText-bold">COMPANY</p>
+          <a class="footerText-light" href="./pages/about.html">About</a>
+          <a class="footerText-light" href="./pages/membership-categories.html">Membership Categories</a>
+          <a class="footerText-light" href="#">President's Statement</a>
+          <a class="footerText-light" href="#">Find a Lawyer</a>
+        </div>
+        <div>
+          <p class="footerText-bold">NBA Links</p>
+          <a class="footerText-light" href="#">ICLE</a>
+          <a class="footerText-light" href="#">HRI</a>
+          <a class="footerText-light" href="#">NHIS</a>
+          <a class="footerText-light" href="#">Section/Fora</a>
+          <a class="footerText-light" href="#">Contact</a>
+          <a class="footerText-light" href="#">FAQ</a>
+        </div>
+        <div>
+          <p class="footerText-bold">LEGAL</p>
+          <a class="footerText-light" href="#">Privacy Policy</a>
+          <a class="footerText-light" href="#">Terms of Service</a>
+          <a class="footerText-light" href="#">Anti-Money Laundry Policy</a>
+        </div>
+        <div>
+          <p class="scanner-text">
+            Download App
+          </p>
+          <a class="ios-display" href="https://apps.apple.com/ng/app/nba-digital-app/id6464066248">
+            <img class="ios-width" src="./photos/appstore-logo.png">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=ng.org.nigerianbar">
+            <img class="android-width" src="./photos/playstore-logo.png">
+          </a>
+        </div>
+      </div>
+      <div class="footer-lastContent">
+        <p class="last-text">Copyright © 2024 Nigerian Bar Association. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+</body>
+</html>
